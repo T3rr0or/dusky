@@ -109,6 +109,8 @@ export PATH=$PATH:~/.spicetify
 
 
 alias config='nocorrect git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias importvpn='nmcli connection import type wireguard file'
+alias removevpn='nmcli connection delete type wireguard file'
 alias sourcerc='source ~/.zshrc'
 export PATH="$HOME/.npm-global/bin:$PATH"
 

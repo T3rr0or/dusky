@@ -286,7 +286,8 @@
       "off": "󰦞",
       "active": "󰦝",
       "inactive": "󰦞"
-    },
+  },
+
     "on-click": "~/.local/bin/wg-toggle",
     "on-click-right": "~/.local/bin/wg-toggle next",
     "on-scroll-up": "~/.local/bin/wg-toggle previous",
