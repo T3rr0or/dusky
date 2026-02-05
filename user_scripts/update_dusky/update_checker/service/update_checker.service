@@ -1,0 +1,20 @@
+[Unit]
+Description=Dusky Dotfiles Update Checker (Background)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# %h automatically resolves to your home directory
+ExecStart=%h/user_scripts/update_dusky/update_checker/update_checker.sh --num
+
+# --- EFFICIENCY SETTINGS ---
+# Run with lowest CPU priority (19) so it yields to everything else
+Nice=19
+# Run with 'idle' I/O priority so disk access never slows down apps
+IOSchedulingClass=idle
+# Prevent the process from keeping the CPU awake
+CPUSchedulingPolicy=idle
+
+[Install]
+WantedBy=default.target

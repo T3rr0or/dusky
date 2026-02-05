@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(systemctl hibernate:*)",
+      "Bash(echo:*)",
+      "Bash(swapon:*)",
+      "Bash(lsblk:*)",
+      "Bash(sudo btrfs subvolume create:*)",
+      "Bash(sudo mount:*)",
+      "Bash(sudo btrfs subvolume list:*)",
+      "Bash(chmod:*)"
+    ]
+  }
+}

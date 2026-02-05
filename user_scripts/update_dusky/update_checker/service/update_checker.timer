@@ -1,0 +1,18 @@
+[Unit]
+Description=Timer for Dusky Update Checker (Every 2h)
+
+[Timer]
+# Wait 10 minutes after boot/login before the first check
+OnBootSec=10min
+
+# Run 2 hours after the LAST run finished
+OnUnitActiveSec=2h
+
+# Add up to 5 minutes of random delay to prevent precise-time CPU spikes
+RandomizedDelaySec=5m
+
+# If the computer was off during a scheduled run, run immediately on boot
+Persistent=true
+
+[Install]
+WantedBy=timers.target
