@@ -73,7 +73,7 @@ if ! geometry=$(slurp 2>/dev/null); then
 fi
 
 # 2. Validate Geometry (Security & Sanity Check)
-if [[ ! "${geometry}" =~ ^[0-9]+,[0-9]+\ [0-9]+x[0-9]+$ ]]; then
+if [[ ! "${geometry}" =~ ^-?[0-9]+,-?[0-9]+\ [0-9]+x[0-9]+$ ]]; then
     die "Invalid selection geometry received."
 fi
 

@@ -116,3 +116,4 @@ export PATH="$HOME/.npm-global/bin:$PATH"
 
 # Go binaries (added by DomScan installer)
 export PATH=$PATH:/home/stefan/go/bin
+export PATH="$HOME/.local/bin:$PATH"
