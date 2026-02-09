@@ -59,3 +59,4 @@ application/x-zerosize=nvim.desktop;org.kde.kate.desktop;
 application/x-shellscript=org.kde.kate.desktop;
 text/x-log=org.kde.kwrite.desktop;org.gnome.TextEditor.desktop;
 text/markdown=org.kde.kate.desktop;
+x-scheme-handler/discord=vesktop.desktop;
